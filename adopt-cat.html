@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Cat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="js/script2.js"></script>
+</head>
+
+<body>
+    <nav class="header">
+        <h1 class="heading">Cat Adoption</h1>
+        <div class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <a href="adopt-cat.html">Adopt cat</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- In the Form, user can add cats for adoption -->
+    <form class="form" action="javascript:void(0);" method="POST" onsubmit="add()">
+        <Label>Add cat for adoption</Label>
+        <br><br>
+
+        <label for="">Name: </label>
+        <input type="text" id="nameInput">
+
+        <label for="">Breed: </label>
+        <input type="text" id="breedInput">
+
+        <label for="">Age: </label>
+        <input type="text" id="ageInput">
+
+        <label for="">Color: </label>
+        <input type="text" id="colorInput">
+
+        <input class="button" type="submit" value="Add">
+    </form>
+
+    <table class="table" id="dashTable">
+
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Age</th>
+            <th scope="col">Color</th>
+        </tr>
+        <tr>
+            <td>Lucy</td>
+            <td>Shiraz</td>
+            <td>3 months</td>
+            <td>White</td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td>Chinchilla</td>
+            <td>9 months</td>
+            <td>Grey</td>
+        </tr>
+
+    </table>
+
+
+    <div class="footer">
+        <h2>2020 - All Rights Reserved to The Jordan Cat Rescue</h2>
+    </div>
+</body>
+
+</html>
